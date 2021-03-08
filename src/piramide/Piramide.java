@@ -5,19 +5,33 @@
  */
 package piramide;
 
+import java.util.Scanner;
+
 /**
  *
  * @author juanpablo
  */
 public class Piramide {
-
+ private int n;
     
-    public static void main(String[] args) {
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j <= i; j++) {
-                 System.out.print("*");
+    public void Numero(){
+    Scanner dale = new Scanner(System.in);
+        System.out.println("De cuantas filas quieres la piramide");
+        n = dale.nextInt();
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i+1; j++) {
+                
+                System.out.print("  *  ");
             }
+                 
+            
             System.out.println("");
         }
+    
     }
+    public static void main(String[] args) {
+        Piramide ejecutar = new Piramide();
+        ejecutar.Numero();
+    }
+    
 }

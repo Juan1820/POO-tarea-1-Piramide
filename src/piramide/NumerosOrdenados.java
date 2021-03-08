@@ -30,6 +30,11 @@ public class NumerosOrdenados {
         }
         System.out.print(Arrays.toString(num));
     }
+    
+    public void Operacion(){
+        
+    }
+    
     public static void main(String[] args) {
         NumerosOrdenados ejecutar = new NumerosOrdenados();
         ejecutar.entrada();
